@@ -1,0 +1,1 @@
+console.log("main.js"),$(document).ready(function(){$("#update").on("click",function(){})});
