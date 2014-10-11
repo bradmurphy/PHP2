@@ -3,6 +3,8 @@
 	<?
 		// Connect
 		include_once("connect.php");
+		// $connection = new createConnection();
+		// $connection->connectToDatabase();
 
 		$query1 = $database_connection->query("SELECT * FROM galleries"); // HOMEWORK: write your query to get just the stuff in the galleries table 
 
