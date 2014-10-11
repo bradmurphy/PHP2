@@ -1,0 +1,12 @@
+ul {
+  list-style: none;
+  width: 100%;
+}
+ul li {
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+}
+ul li img {
+  width: 100%;
+}

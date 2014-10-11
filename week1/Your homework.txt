@@ -1,0 +1,13 @@
+Your homework.
+
+Ok, I'm not going to make you try to fully MVC this thing. I did it and it was pretty complex. So We'll do that in class together.
+
+Here's your assignment instead.
+- There are a few comments that start with HOMEWORK: in the 2 php files. Do them.
+- Once that's done, start refactoring. If you don't remember, refactoring means finding places your code repeats itself (like the mysql connection) and moving into one file or function, and otherwise simplifying over complicated stuff. You should end up with at least:
+	- A header view file, which is basically everything thats repeated above the content on both pages. <html> to <body> in this case
+	- A connection file
+	- A footer view file, probably just </body> and </html>
+- After that, research how PHP classes are written, and try to turn your connection file into a full blown model class. See how far you get.
+
+	

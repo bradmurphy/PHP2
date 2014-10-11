@@ -7,11 +7,20 @@ $(document).ready(function(){
 		$.ajax({
 			url: "getGalleryItems.php",
 			success:  function(data) {
+				updateUI(data);
 				console.log(data);
 			},
 			dataType: 'json'
 		});
 
+		function updateUI(data) {
+			console.log(data);
+			for (var i = data.length - 1; i >= 0; i--) {
+				console.log(data[i]);
+				$("#items").append('<li><img src="'+data[i].filename+'"><h1>'+data[i].title+'</h1><p>'+data[i].description+'</p></li>');			
+			};
+
+		}
 
 		// write the AJAX code to request JSON data from getGalleryItems.php
 		// hint, you can use the $.ajax function and tell it to parse the recieved data as JSON into JS objects,
